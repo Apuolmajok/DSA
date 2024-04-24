@@ -1,3 +1,5 @@
+
+// allan allllllannnnnnnnnnnn
 #include <stdio.h>
 #include <string.h>
 
@@ -28,6 +30,10 @@ void sortStudents();
 void exportToCSV();
 void displayMenu();
 
+// allan   allan alllaannnnnnnnnnnnnnnnnnn
+
+
+///////jamessssssssssssssss
 int main() {
     int choice;
 
@@ -70,9 +76,12 @@ int main() {
         }
     }
 
+
     return 0;
 }
 
+
+///////////////////jordan
 void displayMenu() {
     printf("\n--- Student Management System Menu ---\n");
     printf("1. Add Student\n");
@@ -85,6 +94,11 @@ void displayMenu() {
     printf("8. Exit\n");
 }
 
+//////////////jordan
+
+
+
+////////////////roseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 // Implementations of all functions
 
 int findEmptySlot() {
@@ -105,6 +119,9 @@ int findStudentByRegNum(const char* regNum) {
     return -1;
 }
 
+/////////roseeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+//////////apio/////////////////
 void addStudent() {
     int slot = findEmptySlot();
     if (slot == -1) {
@@ -130,6 +147,10 @@ void addStudent() {
     printf("Student added successfully!\n");
 }
 
+//////////////////////////apioooooooooooooooooooooooooo
+
+
+///////////////////allannnnnnnnnnnnnnnn
 void listStudents() {
     printf("Active students:\n");
     for (int i = 0; i < MAX_STUDENTS; i++) {
@@ -140,7 +161,9 @@ void listStudents() {
         }
     }
 }
+///////////////////////////allaaaaaaaaaaaaaaaaaaaaaaaaannnnnnnn
 
+//////////////////////jordan nnnnnnnnnnnnnnnnnnn
 void updateStudent() {
     char regNum[7];
     printf("Enter registration number of the student to update: ");
@@ -163,6 +186,10 @@ void updateStudent() {
     printf("Student information updated successfully!\n");
 }
 
+
+/////////////////////////jordaaannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+//////////////////roseeeeeeeeeeeeeeeeeeeeeee
 void deleteStudent() {
     char regNum[7];
     printf("Enter registration number of the student to delete: ");
@@ -176,6 +203,10 @@ void deleteStudent() {
     printf("Student record deleted successfully.\n");
 }
 
+//////////////////////roseeeeeeeeeeeeeeeeeeeeeeeeee
+    
+
+    ////////apioooooooooooooooooooooooooooo
 void searchStudent() {
     char regNum[7];
     printf("Enter registration number to search: ");
@@ -205,6 +236,9 @@ void sortStudents() {
     printf("Students sorted by name.\n");
 }
 
+//////////////////////////////apiooooooooooooooooooooooo
+
+/////////////////james//////////////////
 void exportToCSV() {
     FILE *fp = fopen("students.csv", "a");
     if (fp == NULL) {
@@ -221,3 +255,4 @@ void exportToCSV() {
     fclose(fp);
     printf("Data exported successfully to 'students.csv'\n");
 }
+//////////////////////////james/////////////////////
